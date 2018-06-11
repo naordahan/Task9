@@ -50,7 +50,7 @@ class TestCase {
           else{
               Failed++;
               Current++;
-              cerr<<str+": Failure in test # "<<Current<<":string value should be "<<a<<"but is "<<b<<"!"<<endl;
+              cerr<<str+": Failure in test # "<<Current<<":string value should be "<<b<<"but is "<<a<<"!"<<endl;
           }
           return *this;
       }
