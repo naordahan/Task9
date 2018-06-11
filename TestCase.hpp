@@ -55,15 +55,15 @@ class TestCase {
           return *this;
       }
       template <typename T,typename T2,typename func> TestCase& check_function(func f,T a,T2 b){
-        a=f(a);
-        if(a==b){
+        int c=f(a);
+        if(c==b){
             Current++;
             Passed++;
         }
         else{
             Current++;
             Failed++;
-            cerr<<str+": Failure in test # "<<Current<<":Function should return "<<b<<" but returned "<<a<<"!"<<endl;
+            cerr<<str+": Failure in test # "<<Current<<":Function should return "<<b<<" but returned "<<c<<"!"<<endl;
         }
         return *this;
       }
