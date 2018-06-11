@@ -21,7 +21,7 @@ class TestCase {
                else {
                      Failed++;
                      Current++;
-                     cerr<<str+": Failure in test #"<<Current<<": "<<a<<" should equal "<<b<<" !"<<endl;
+                     cerr<<str+": Failure in test #"<<Current<<": "<<a<<" should equal "<<b<<"!"<<endl;
               }
               return *this;
        }
@@ -50,7 +50,7 @@ class TestCase {
           else{
               Failed++;
               Current++;
-              cerr<<str+": Failure in test # "<<Current<<":string value should be "<<b<<" but is "<<a<<endl;
+              cerr<<str+": Failure in test #"<<Current<<":string value should be "<<b<<" but is "<<a<<endl;
           }
           return *this;
       }
@@ -63,7 +63,7 @@ class TestCase {
         else{
             Current++;
             Failed++;
-            cerr<<str+": Failure in test # "<<Current<<":Function should return "<<b<<" but returned "<<c<<"!"<<endl;
+            cerr<<str+": Failure in test #"<<Current<<":Function should return "<<b<<" but returned "<<c<<"!"<<endl;
         }
         return *this;
       }
